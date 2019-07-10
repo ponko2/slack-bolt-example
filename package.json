@@ -1,0 +1,26 @@
+{
+  "name": "@ponko2/slack-bolt-example",
+  "description": "A basic example of using the Slack Bolt ⚡️ SDK",
+  "version": "1.0.0",
+  "author": "Takahito Nakano <kano@ponko2.jp>",
+  "dependencies": {
+    "@slack/bolt": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-ponko2": "^14.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.18.2"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
