@@ -11,7 +11,7 @@ app.message(
   /[ぬヌﾇ][ぅゥｩーｰ]*[るルﾙ][ぅっゥッｩｯーｰ]*([ぽポ]|ﾎﾟ)[ぉっォッｫｩｯーｰ]*/,
   async ({ message, context, say }) => {
     try {
-      say(`\`\`\`
+      await say(`\`\`\`
    Λ＿Λ     ＼＼
 （  ・∀・）  | | ｶﾞｯ
  と     ）  | |
@@ -32,21 +32,24 @@ app.message(
   }
 );
 
-app.message('海馬', ({ say }) => {
-  say('ヽ(*ﾟдﾟ)ノｶｲﾊﾞｰ');
+app.message('海馬', async ({ say }) => {
+  await say('ヽ(*ﾟдﾟ)ノｶｲﾊﾞｰ');
 });
 
-app.message(/^(トゥットゥルー|とぅっとぅるー)$/, ({ message, say }) => {
-  say(message.text);
+app.message(/^(トゥットゥルー|とぅっとぅるー)$/, async ({ message, say }) => {
+  await say(message.text);
 });
 
-app.message(/(眠|[ねネﾈ][むムﾑ])[いイｲくクｸ]/, ({ message, say }) => {
-  say(`<@${message.user}> もう寝なさい`);
+app.message(/(眠|[ねネﾈ][むムﾑ])[いイｲくクｸ]/, async ({ message, say }) => {
+  await say(`<@${message.user}> もう寝なさい`);
 });
 
-app.message(/(寝|眠|[ねネﾈ])[るルﾙ][おオｵぉォｫわワﾜ]?$/, ({ message, say }) => {
-  say(`<@${message.user}> おやすみ`);
-});
+app.message(
+  /(寝|眠|[ねネﾈ])[るルﾙ][おオｵぉォｫわワﾜ]?$/,
+  async ({ message, say }) => {
+    await say(`<@${message.user}> おやすみ`);
+  }
+);
 
 (async () => {
   await app.start(process.env.PORT || 3000);
