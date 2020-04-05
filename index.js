@@ -4,7 +4,7 @@ const { App } = require('@slack/bolt');
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
-  signingSecret: process.env.SLACK_SIGNING_SECRET
+  signingSecret: process.env.SLACK_SIGNING_SECRET,
 });
 
 app.message(
@@ -24,7 +24,7 @@ app.message(
         token: context.botToken,
         name: 'hammer',
         channel: message.channel,
-        timestamp: message.ts
+        timestamp: message.ts,
       });
     } catch (err) {
       console.error('Failed to add emoji reaction :(', err);
