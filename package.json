@@ -7,13 +7,13 @@
     "@slack/bolt": "^1.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-ponko2": "^14.0.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^3.0.0",
-    "lint-staged": "^9.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-ponko2": "^16.0.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.2",
     "prettier": "^1.18.2"
   },
   "license": "MIT",
