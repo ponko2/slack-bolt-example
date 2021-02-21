@@ -3,8 +3,9 @@
 const { App } = require('@slack/bolt');
 
 const app = new App({
+  socketMode: true,
   token: process.env.SLACK_BOT_TOKEN,
-  signingSecret: process.env.SLACK_SIGNING_SECRET,
+  appToken: process.env.SLACK_APP_TOKEN,
 });
 
 app.message(
@@ -52,6 +53,6 @@ app.message(
 );
 
 (async () => {
-  await app.start(process.env.PORT || 3000);
+  await app.start();
   console.log('⚡️ Bolt app is running!');
 })();
