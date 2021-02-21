@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "author": "Takahito Nakano <kano@ponko2.jp>",
   "dependencies": {
-    "@slack/bolt": "^3.2.0"
+    "@slack/bolt": "^3.2.0",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "eslint": "^7.20.0",
@@ -31,7 +32,7 @@
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier . --check",
     "postinstall": "is-ci || husky install",
-    "start": "node index.js",
+    "start": "node -r dotenv/config index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
