@@ -10,7 +10,7 @@
   "devDependencies": {
     "eslint": "^7.25.0",
     "eslint-config-ponko2": "^20.0.0",
-    "eslint-config-prettier": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-node": "^11.1.0",
     "husky": "^6.0.0",
     "is-ci": "^3.0.0",
